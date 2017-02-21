@@ -1,0 +1,18 @@
+<md-input-container>
+  <input mdInput placeholder="Topic" [(ngModel)]="messageContent.topic">
+</md-input-container>
+
+<md-input-container>
+  <input mdInput placeholder="Message" [(ngModel)]="messageContent.message"/>
+</md-input-container>
+
+<button md-raised-button (click)="sendMessage()" color="primary">Send</button>
+
+<md-list dense>
+  <h3 md-subheader>Messages</h3>
+  <md-list-item *ngFor="let messageContent of messages">
+    <md-icon md-list-avatar>folder</md-icon>
+    <h4 md-line>{{messageContent.topic}}</h4>
+    <p md-line>{{messageContent.message}}</p>
+  </md-list-item>
+</md-list>

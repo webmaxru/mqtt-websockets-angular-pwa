@@ -1,0 +1,20 @@
+{
+  "name": "nodemqtt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "body-parser": "^1.16.1",
+    "cors": "^2.8.1",
+    "express": "^4.14.1",
+    "mqtt": "^2.4.0",
+    "socket.io": "^1.7.3",
+    "web-push": "^3.2.2"
+  }
+}
